@@ -22,7 +22,7 @@ xs = np.arange(10)
 graph_func(xs=xs) # {'v': 8.25, 'm2': 28.5, 'm': 4.5, 'n': 10}
 ```
 
-`v` depends on `m` and `m2`; `m`, `m2` depends on `xs` and `n`; `n` depends on `xs` (the input to the graph). Indigo enables you to describe the dependency painlessly. It will arrange the computation for you.
+`v` depends on `m` and `m2`; `m`, `m2` both depend on `xs` and `n`; `n` depends on `xs` (the input to the graph). Indigo enables you to describe the dependency painlessly. It will arrange the computation for you.
 
 Right now the library is still in its alpha. There are many exciting features I want to implement:
 - Supporting profiling each computation.
